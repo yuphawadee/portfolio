@@ -51,7 +51,7 @@ function Hero() {
                     transition={{ duration: 1, delay: 1.5 }}
                 >
                     <a
-                        href="#"
+                        href="/resume.pdf"
                         className="border-custom w-[150px] h-[40px] text-base lg:text-lg flex justify-center"
                     >
                         Resume
