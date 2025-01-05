@@ -1,27 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #000000;
+  --foreground: #F4F4F4;
+  /* --foreground: #0F051D; */
+  --green: #D3E97A;
+  --purple: #7000ff;
+  --purple-dark: #6f00ffb2;
+  --blue: #4f46e5;
+  --dark-blue:#3b32e8;
 }
 
-@media (prefers-color-scheme: dark) {
+/* .dark {
+  --background: #000000;
+  --foreground: #FFFFFF;
+} */
+
+/* @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #0F051D;
+    --background: #000000;
+    --foreground: #FFFFFF;
   }
-}
+} */
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+
+  .mono-font {
+    font-family: "JetBrains Mono", monospace;
+  }
+
+  .inter-font {
+    font-family: "Inter", sans-serif;
+  }
+
+  .progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    /* background: #FFFFFF; */
+    background: var(--foreground);
+    transform-origin: 0%;
+  }
+
+  /* ปรับขนาด scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    /* ความกว้างของ scrollbar แนวตั้ง */
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--blue);
+    border-radius: 10px;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--dark-blue);
+  }
+
+  /* navbar */
+  .from-black {
+    --tw-gradient-from: #000 var(--tw-gradient-from-position);
+    --tw-gradient-to: transparent var(--tw-gradient-to-position);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  }
+
+  .from-white {
+    --tw-gradient-from: #ffffff var(--tw-gradient-from-position);
+    --tw-gradient-to: transparent var(--tw-gradient-to-position);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  }
+
+  .bg-gradient-to-b {
+    background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+  }
+
+  .bg-gradient-to-t {
+    background-image: linear-gradient(to top, var(--tw-gradient-stops));
+
+  }
+
+  /* hero */
+  .gradient-border-bottom {
+    position: relative;
+    /* ให้ position ขององค์ประกอบเป็น relative */
+    padding-bottom: 1.5rem;
+    /* เพิ่มระยะห่างสำหรับเส้นขอบที่จะใช้ */
+  }
+
+  .gradient-border-bottom::after {
+    content: "";
+    /* ต้องระบุ content เสมอ แม้จะไม่แสดงข้อความ */
+    position: absolute;
+    /* วางตำแหน่งแบบ absolute เพื่อให้ซ้อนกับองค์ประกอบหลัก */
+    bottom: .5rem;
+    /*ตำแหน่งจากด้านล่าง*/
+    left: 0;
+    /* เริ่มจากด้านซ้ายสุด */
+    width: 100%;
+    /* ให้ขยายเต็มความกว้างขององค์ประกอบหลัก */
+    height: 0.35rem;
+    /* ความหนาของเส้น */
+    border-radius: 1rem;
+    /* เพิ่มความโค้งมนให้เส้น */
+    background: linear-gradient(90deg, #4f46e5, #38bdf8);
+    /* ไล่สี */
+    box-shadow: 0 0 1rem var(--blue);
+    /* เพิ่มเงาฟุ้งเบลอ */
+    transform: scaleX(0);
+    /* เริ่มต้นด้วยขนาด 0 */
+    transform-origin: left;
+    transition: transform 1s ease;
+    /* การ animate */
+  }
+
+
+  @keyframes growHorizontal {
+    from {
+      transform: scaleX(0);
+    }
+
+    to {
+      transform: scaleX(1);
+    }
+  }
+
+  .gradient-border-bottom.inview::after {
+    animation: growHorizontal 1.3s cubic-bezier(.9, 0, .5, .9) .8s forwards;
+  }
+
+  .border-custom {
+    position: relative;
+    /* ใช้สำหรับการจัดการตำแหน่งของ pseudo-elements (เช่น ::after, ::before) ถ้าต้องการ */
+    display: inline-flex;
+    /* จัดการ layout ของลิงก์ให้อยู่ในบรรทัดเดียวและมีการจัดแนวกลาง */
+    align-items: center;
+    /* จัดแนวเนื้อหาภายในลิงก์ให้อยู่กลางแนวตั้ง */
+    text-decoration: none;
+    /* เอา underline ออกจากลิงก์ */
+    /* font-size: .8rem; ขนาดฟอนต์พื้นฐาน */
+    font-weight: 800;
+    /* น้ำหนักฟอนต์ (ตัวหนา) */
+    padding: .65rem 1.75rem;
+    /* เพิ่มพื้นที่ภายในลิงก์ */
+    background-clip: padding-box;
+    /* ให้พื้นหลังไม่ล้นออกนอก padding */
+    border-radius: .2rem;
+    /* ทำมุมของลิงก์ให้โค้งมน */
+    /* color: #fff; กำหนดสีข้อความของลิงก์เป็นสีขาว */
+    background-size: 220%;
+    /*ขยายขนาดของพื้นหลัง gradient เพื่อให้ครอบคลุมพื้นที่ทั้งหมด*/
+    background-image: linear-gradient(120deg, transparent, transparent 50%, var(--blue) 0);
+    /* สร้าง gradient ที่มีสีม่วง (#8b31ff) */
+    outline: 2px solid var(--blue);
+    /* สร้างเส้นขอบที่เป็นแบบ solid และมีสีม่วง (#7000ff) */
+    outline-offset: 4px;
+    /* กำหนดระยะห่างของเส้นขอบจากลิงก์ */
+  }
+
+  .outline-offset-right::after {
+    content: '';
+    position: absolute;
+    top: 20px;
+    right: -20px;
+    /* เยื้องไปทางขวา */
+    bottom: -20px;
+    left: 20px;
+    border: 3px solid var(--blue);
+    /* สีและความหนาของ outline */
+    border-radius: 1rem;
+    /* ความโค้งมนเหมือนกับรูปภาพ */
+    z-index: -1;
+    /* อยู่ข้างหลังรูปภาพ */
+    /* box-shadow: 0 0 1rem var(--blue); */
+    /* เพิ่มเงาฟุ้งเบลอ */
+  }
+
+  .text-gradient {
+    background: linear-gradient(90deg, #4f46e5, #38bdf8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  span button{
+    width: fit-content;
+    background-color: #1A1A1A;
+    border-radius: 9999px;
+    padding: 10px 20px 10px 20px;
+  }
+
+  .menu-transition {
+    transition: border-radius 0.75s ease;  
   }
 }
