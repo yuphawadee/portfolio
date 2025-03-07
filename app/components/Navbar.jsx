@@ -32,10 +32,16 @@ function Navbar() {
         />
       </div>
       <div className="max-w-[1300px] h-28 m-auto flex justify-between items-center p-5 relative">
-        <span onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className='cursor-pointer'>
-          <HiOutlineBolt size={40} className='text-[#f4f4f4]' />
+        <span
+          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          className="cursor-pointer"
+        >
+          <HiOutlineBolt
+            size={40}
+            className="text-[#f4f4f4] filter hover:drop-shadow-[0_0_10px_rgb(255,255,255)]"
+          />
         </span>
-        <div className='flex items-center gap-5 z-50 cursor-pointer'>
+        <div className='flex items-center gap-5 z-50 cursor-pointer filter hover:drop-shadow-[0_0_10px_rgb(255,255,255)]'>
           {isMenuOpen ? (
             <IoCloseOutline size={40} className='text-[#f4f4f4]' onClick={toggleMenu} />
           ) : (

@@ -187,6 +187,7 @@ body {
     border-radius: 1rem;
     /* ความโค้งมนเหมือนกับรูปภาพ */
     z-index: -1;
+    /* background-color: #1c1c1c; */
     /* อยู่ข้างหลังรูปภาพ */
     /* box-shadow: 0 0 1rem var(--blue); */
     /* เพิ่มเงาฟุ้งเบลอ */
@@ -209,3 +210,4 @@ body {
     transition: border-radius 0.75s ease;  
   }
 }
+

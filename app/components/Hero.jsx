@@ -24,7 +24,7 @@ function Hero() {
 
                 {/* แอนิเมชันชื่อ */}
                 <motion.div
-                    className="flex gap-5 lg:text-6xl text-5xl inter-font font-bold pb-7"
+                    className="flex gap-5 text-lg text-3xl md:text-6xl lg:text-6xl inter-font font-bold pb-7"
                     initial={{ x: 0, opacity: 0 }}
                     animate={isInView ? { x: 0, opacity: 1 } : {}}
                     transition={{ duration: 1, delay: 0.5 }}
@@ -79,6 +79,7 @@ function Hero() {
                         height={1000}
                         alt="Profile Image"
                     />
+                    {/* <div className="absolute inset-0 rounded-2xl border-2 border-[#D3E97A] opacity-50 blur-sm -z-10"></div> */}
                     <motion.div
                         className="absolute top-0 left-0 w-[274px] h-[275px] rounded-2xl pointer-events-none outline-offset-right -z-10"
                         initial={{ scale: 0.9, opacity: 0 }}

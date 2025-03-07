@@ -51,7 +51,7 @@ function Skill() {
   const isInView = useInView(ref, { once: true });
 
   return (
-    <div ref={ref} className='w-full h-screen flex flex-col gap-8'>
+    <div ref={ref} className='w-full lg:h-screen h-full flex flex-col gap-8 lg:pb-0 pb-20'>
       <div className=''>
         <motion.p
           className="text-sm tracking-[.1rem] text-[#F4F4F4]"
@@ -70,7 +70,7 @@ function Skill() {
           My Skills
         </motion.h1>
         <motion.p
-          className="w-2/4 text-2xl text-[#F4F4F4] font-bold pt-2 pb-5 leading-normal"
+          className="lg:w-2/4 lg:text-2xl text-xl text-[#F4F4F4] font-bold pt-2 pb-5 leading-normal"
          initial={{ y: 50, opacity: 0 }}
          animate={isInView ? { y: 0, opacity: 1 } : {}}
          transition={{ duration: 1.2, delay: 0.7 }}
@@ -87,7 +87,7 @@ function Skill() {
         > 
         <div>
           <h3 className='tracking-[.1rem]'>LANGUAGES AND TOOLS</h3>
-          <div className='flex items-center gap-8 pt-5'>
+          <div className='flex flex-wrap items-center gap-8 pt-5'>
             <Image src='/html.svg' width={60} height={60} alt='' />
             <Image src='/css.svg' width={60} height={60} alt='' />
             <Image src='/javascript.svg' width={60} height={60} alt='' />
@@ -108,7 +108,7 @@ function Skill() {
           <h3 className='tracking-[.1rem]'>LIBRARIES AND FRAMEWORKS</h3>
           <div className='flex items-center gap-8 pt-5'>
             <Image src='/next.js.svg' width={60} height={60} alt='' />
-            <Image src='/react.svg' width={60} height={60} alt='' />
+            <Image src='/react.svg' width={60} height={60} alt="React logo" />
             <Image src='/tailwindcss.svg' width={60} height={60} alt='' />
             <Image src='/bootstrap.svg' width={60} height={60} alt='' />
           </div>

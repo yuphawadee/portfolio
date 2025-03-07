@@ -57,7 +57,7 @@ const Typing = ({ words, typingSpeed = 100, deleteSpeed = 50, delay = 4000 }) =>
 
 export default function TypingText() { 
   return (
-    <div className='text-2xl lg:text-3xl text-[#AAAAAA]'>
+    <div className='text-xl lg:text-3xl text-[#AAAAAA]'>
       <Typing
         words={["Crafting Modern Web Applications!", "Building Responsive and Accessible Websites!", "Focused on Performance and User Experience!"]}
         typingSpeed={100}
