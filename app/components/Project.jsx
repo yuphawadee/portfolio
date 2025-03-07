@@ -91,7 +91,7 @@ function Project() {
               <div>
                 <h2 className="text-lg font-semibold pb-1">Technologies Used</h2>
                 <ul className="list-disc pl-5 text-[#C7C7C7]">
-                  <li><span className="font-bold">Frontend:</span> HTML, CSS, Bootstrap</li>
+                  <li><span className="font-bold">Frontend:</span> HTML, CSS, JavaScript, Bootstrap</li>
                   <li><span className="font-bold">Backend:</span> PHP</li>
                   <li><span className="font-bold">Database:</span> MySQL</li>
                 </ul>

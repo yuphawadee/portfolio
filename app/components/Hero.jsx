@@ -24,7 +24,7 @@ function Hero() {
 
                 {/* แอนิเมชันชื่อ */}
                 <motion.div
-                    className="flex gap-5 text-lg text-3xl md:text-6xl lg:text-6xl inter-font font-bold pb-7"
+                    className="flex gap-5 text-3xl md:text-6xl lg:text-6xl inter-font font-bold pb-5"
                     initial={{ x: 0, opacity: 0 }}
                     animate={isInView ? { x: 0, opacity: 1 } : {}}
                     transition={{ duration: 1, delay: 0.5 }}
