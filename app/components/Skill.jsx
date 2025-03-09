@@ -124,7 +124,7 @@ function Skill() {
           <h3 className='tracking-[.1rem]'>DATABASES</h3>
           <div className='flex items-center gap-8 pt-5'>
             <Image src='/mysql.svg' width={60} height={60} alt='' className='p-1' />
-            <Image src='/mongodb.svg' width={60} height={60} alt='' className='pb-1' />
+            <Image src='/postgresql.svg' width={60} height={60} alt='' className='pb-1' />
           </div>
         </div>
         </motion.div> 
