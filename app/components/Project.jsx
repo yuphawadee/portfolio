@@ -53,8 +53,8 @@ function Project() {
             animate={isInView ? { y: 0, opacity: 1 } : {}}
             transition={{ duration: 1.5, delay: 1.2 }}
           >
-            <div className="w-full lg:h-[600px] md:py-20 bg-[#1A1A1A] rounded-xl flex items-center justify-center hover:-translate-y-5 transition-transform duration-500 ease-in-out">
-              <div className=" bg-[#f4f4f4] lg:w-[450px] lg:h-[320px] md:h-[420px] h-[300px] md:w-3/4 rounded-xl overflow-hidden">
+            <div className="w-full lg:h-[600px] sm:py-20 bg-[#1A1A1A] rounded-xl flex items-center justify-center hover:-translate-y-5 transition-transform duration-500 ease-in-out">
+              <div className=" bg-[#f4f4f4] lg:w-[450px] sm:w-[550px] lg:h-[320px] md:h-[420px] h-[300px] rounded-xl overflow-hidden">
                 <Image
                   src="/addpay-1.png"
                   width={450}
@@ -125,10 +125,10 @@ function Project() {
             animate={isInView ? { y: 0, opacity: 1 } : {}}
             transition={{ duration: 1.5, delay: 2 }}
           >
-            <div className="w-full lg:h-[600px] md:py-20 bg-[#1A1A1A] rounded-xl flex items-center justify-center hover:-translate-y-5 transition-transform duration-500 ease-in-out ">
-              <div className="lg:w-[450px] lg:h-[320px] md:h-[420px]  h-[300px] md:w-3/4 rounded-xl overflow-hidden">
+            <div className="w-full lg:h-[600px] sm:py-20 bg-[#1A1A1A] rounded-xl flex items-center justify-center hover:-translate-y-5 transition-transform duration-500 ease-in-out ">
+              <div className="lg:w-[450px] sm:w-[550px] lg:h-[320px] md:h-[420px] h-[300px] rounded-xl overflow-hidden">
                 <Image
-                  src="/e-commerce-1.png"
+                  src="/e-commerce-2.png"
                   width={450}
                   height={500}
                   className="object-cover w-full h-full"
@@ -204,8 +204,8 @@ function Project() {
             animate={isInView ? { y: 0, opacity: 1 } : {}}
             transition={{ duration: 1.5, delay: 3 }}
           >
-            <div className="w-full lg:h-[600px] md:py-20 bg-[#1A1A1A] rounded-xl flex items-center justify-center hover:-translate-y-5 transition-transform duration-500 ease-in-out">
-              <div className=" lg:w-[450px] lg:h-[320px] md:h-[420px] h-[300px] md:w-3/4 rounded-xl overflow-hidden">
+            <div className="w-full lg:h-[600px] sm:py-20 bg-[#1A1A1A] rounded-xl flex items-center justify-center hover:-translate-y-5 transition-transform duration-500 ease-in-out">
+              <div className="lg:w-[450px] sm:w-[550px] lg:h-[320px] md:h-[420px] h-[300px] rounded-xl overflow-hidden">
                 <Image
                   src="/crud-5.png"
                   width={450}
