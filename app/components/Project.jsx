@@ -153,10 +153,10 @@ function Project() {
                 <span>Tailwind</span>
                 <span>API</span>
               </div> */}
-<div>
+              <div>
                 <h2 className="text-lg font-semibold pb-1">Description</h2>
                 <p className="text-[#C7C7C7]">
-                Developed an E-Commerce platform with features including product categorization, search functionality, and the ability to add/remove products from the cart. The system is built with a responsive design and dynamic data fetching via API, providing a seamless shopping experience.                </p>
+                  Developed an E-Commerce platform with features including product categorization, search functionality, and the ability to add/remove products from the cart. The system is built with a responsive design and dynamic data fetching via API, providing a seamless shopping experience.                </p>
               </div>
               <div>
                 <h2 className="text-lg font-semibold pb-1">Key Features</h2>
@@ -197,9 +197,8 @@ function Project() {
 
 
         {/* Third Project */}
-        <div className="grid lg:grid-cols-2 gap-10 lg:gap-0">
+        {/* <div className="grid lg:grid-cols-2 gap-10 lg:gap-0">
           <motion.div
-            // className="w-full h-[500px] bg-[#1A1A1A] rounded-xl flex items-center justify-center"
             initial={{ y: 50, opacity: 0 }}
             animate={isInView ? { y: 0, opacity: 1 } : {}}
             transition={{ duration: 1.5, delay: 3 }}
@@ -218,23 +217,12 @@ function Project() {
           </motion.div>
 
           <motion.div
-            // className="flex flex-col justify-center pl-0 lg:pl-20 gap-6"
             initial={{ y: 50, opacity: 0 }}
             animate={isInView ? { y: 0, opacity: 1 } : {}}
             transition={{ duration: 2, delay: 3.5 }}
           >
             <div className="flex flex-col justify-center pl-0 lg:pl-20 gap-6 h-full">
               <h1 className="text-[2rem] font-semibold">Internship Management System</h1>
-              {/* <p className="text-lg text-[#C7C7C7]">
-                A web-based system for storing and managing data related to students, their internships, and participating companies. The system supports CRUD operations, enabling efficient management of internship information in a centralized platform.
-              </p>
-              <div className="flex gap-5 py-2">
-                <span>Next.js</span>
-                <span>Tailwind</span>
-                <span>API</span>
-                <span>Prisma</span>
-                <span>Bootstrap</span>
-              </div> */}
               <div>
                 <h2 className="text-lg font-semibold pb-1">Description</h2>
                 <p className="text-[#C7C7C7]">
@@ -260,6 +248,80 @@ function Project() {
               <div className="text-base font-bold ">
                 <Link
                   href="https://github.com/yuphawadee/crud-nextauth-prisma" target="_blank"
+                  className="border-b-[3px] text-[#38bdf8] hover:text-[var(--blue)] border-[#38bdf8] hover:border-[var(--blue)] flex items-center gap-2 w-fit tracking-[.1rem]"
+                >
+                  SEE ON GITHUB
+                  <IoLogoGithub size={20} style={{ strokeWidth: 1.5 }} />
+                </Link>
+              </div>
+            </div>
+          </motion.div>
+        </div> */}
+
+        {/* Fourth Project */}
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-0">
+          <motion.div
+            // className="w-full h-[500px] bg-[#1A1A1A] rounded-xl flex items-center justify-center"
+            initial={{ y: 50, opacity: 0 }}
+            animate={isInView ? { y: 0, opacity: 1 } : {}}
+            transition={{ duration: 1.5, delay: 3 }}
+          >
+            <div className="w-full lg:h-[600px] sm:py-20 bg-[#1A1A1A] rounded-xl flex items-center justify-center hover:-translate-y-5 transition-transform duration-500 ease-in-out">
+              <div className="lg:w-[450px] sm:w-[550px] lg:h-[320px] md:h-[420px] h-[300px] rounded-xl overflow-hidden">
+                <Image
+                  src="/report-1.png"
+                  width={450}
+                  height={500}
+                  className="object-cover w-full h-full"
+                  alt=""
+                />
+              </div>
+            </div>
+          </motion.div>
+
+          <motion.div
+            // className="flex flex-col justify-center pl-0 lg:pl-20 gap-6"
+            initial={{ y: 50, opacity: 0 }}
+            animate={isInView ? { y: 0, opacity: 1 } : {}}
+            transition={{ duration: 2, delay: 3.5 }}
+          >
+            <div className="flex flex-col justify-center pl-0 lg:pl-20 gap-6 h-full">
+              <h1 className="text-[2rem] font-semibold">Report Project</h1>
+              {/* <p className="text-lg text-[#C7C7C7]">
+                A web-based system for storing and managing data related to students, their internships, and participating companies. The system supports CRUD operations, enabling efficient management of internship information in a centralized platform.
+              </p>
+              <div className="flex gap-5 py-2">
+                <span>Next.js</span>
+                <span>Tailwind</span>
+                <span>API</span>
+                <span>Prisma</span>
+                <span>Bootstrap</span>
+              </div> */}
+              <div>
+                <h2 className="text-lg font-semibold pb-1">Description</h2>
+                <p className="text-[#C7C7C7]">Developed a web-based platform that allows users to submit community complaints (e.g., water supply issues, power outages) and track their status. Administrators can manage and update complaints through a dedicated dashboard.</p>
+              </div>
+              <div>
+                <h2 className="text-lg font-semibold pb-1">Key Features</h2>
+                <ul className="list-disc pl-5 text-[#C7C7C7]">
+                  <li><span className="font-bold">Complaint Submission: </span> Report issues via an easy online form.</li>
+                  <li><span className="font-bold">Status Tracking: </span> Track complaint status (e.g., "In Progress," "Resolved").</li>
+                  <li><span className="font-bold">Admin Dashboard: </span> Manage and update complaint status through the admin panel.</li>
+                  <li><span className="font-bold">Search and Filter: </span> Search and filter complaints by status.</li>
+                </ul>
+              </div>
+              <div>
+                <h2 className="text-lg font-semibold pb-1">Technologies Used</h2>
+                <ul className="list-disc pl-5 text-[#C7C7C7]">
+                  <li><span className="font-bold">Frontend:</span> Vite, Tailwind CSS</li>
+                  <li><span className="font-bold">Backend:</span> Express</li>
+                  <li><span className="font-bold">Database:</span> MySQL</li>
+                  <li><span className="font-bold">Testing:</span> Vitest</li>
+                </ul>
+              </div>
+              <div className="text-base font-bold ">
+                <Link
+                  href="https://github.com/yuphawadee/report-unit-test" target="_blank"
                   className="border-b-[3px] text-[#38bdf8] hover:text-[var(--blue)] border-[#38bdf8] hover:border-[var(--blue)] flex items-center gap-2 w-fit tracking-[.1rem]"
                 >
                   SEE ON GITHUB
