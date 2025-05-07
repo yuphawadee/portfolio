@@ -10,24 +10,38 @@ import Footer from "./components/Footer";
 export default function Home() {
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 2000);
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     setLoading(false);
+  //   }, 2000);
 
-    return () => clearTimeout(timer);
-  }, []);
+  //   return () => clearTimeout(timer);
+  // }, []);
 
-  if (loading) {
-    return (
-      <div className="w-full h-screen flex justify-center items-center">
-        <div className="rounded-full overflow-hidden">
-          <BarLoader color={'#4f46e5'} width={150} loading={loading}  />
-        </div>
+  // if (loading) {
+  //   return (
+  //     <div className="w-full h-screen flex justify-center items-center">
+  //       <div className="rounded-full overflow-hidden">
+  //         <BarLoader color={'#4f46e5'} width={150} loading={loading}  />
+  //       </div>
         
-      </div>
-    );
-  }
+  //     </div>
+  //   );
+  // }
+
+  // const [isHydrated, setIsHydrated] = useState(false);
+
+  // useEffect(() => {
+  //   setIsHydrated(true); // แสดงว่าหน้าถูกโหลดที่ client แล้ว
+  // }, []);
+
+  // if (!isHydrated) {
+  //   return (
+  //     <div className="w-full h-screen flex justify-center items-center">
+  //       <BarLoader color="#4f46e5" width={150} />
+  //     </div>
+  //   );
+  // }
 
   return (
     <div className="" >

@@ -17,7 +17,7 @@ function Hero() {
                     className="text-[#4e4be6] text-lg pb-3"
                     initial={{ x: 0, opacity: 0 }}
                     animate={isInView ? { x: 0, opacity: 1 } : {}}
-                    transition={{ duration: 1 }}
+                    transition={{ duration: 0.5 }}
                 >
                     Hi, my name is
                 </motion.p>
