@@ -128,7 +128,7 @@ function Project() {
             <div className="w-full lg:h-[600px] sm:py-20 bg-[#1A1A1A] rounded-xl flex items-center justify-center hover:-translate-y-5 transition-transform duration-500 ease-in-out ">
               <div className="lg:w-[450px] sm:w-[550px] lg:h-[320px] md:h-[420px] h-[300px] rounded-xl overflow-hidden">
                 <Image
-                  src="/e-commerce-2.png"
+                  src="/e-vue.png"
                   width={450}
                   height={500}
                   className="object-cover w-full h-full"
@@ -156,35 +156,35 @@ function Project() {
               <div>
                 <h2 className="text-lg font-semibold pb-1">Description</h2>
                 <p className="text-[#C7C7C7]">
-                  Developed an E-Commerce platform with features including product categorization, search functionality, and the ability to add/remove products from the cart. The system is built with a responsive design and dynamic data fetching via API, providing a seamless shopping experience.                </p>
+                  Developed an E-Commerce web application using Vue.js, connected to a MySQL database through Express.js. The system includes a customer-facing Shop page and an Admin dashboard for product management. Users can browse, search, and filter products, while admins can add, edit, and delete product information. The interface is styled with Tailwind CSS for a clean and responsive design.                </p>
               </div>
               <div>
                 <h2 className="text-lg font-semibold pb-1">Key Features</h2>
                 <ul className="list-disc pl-5 text-[#C7C7C7]">
-                  <li><span className="font-bold">Product Management: </span> Add, remove, and manage products in the cart</li>
-                  <li><span className="font-bold">Search: </span> Search for products with dynamic filtering</li>
-                  <li><span className="font-bold">Product Categorization: </span> Filter products based on categories</li>
-                  <li><span className="font-bold">Real-time Updates: </span> Fetch product data via API</li>
+                  <li><span className="font-bold">Product Management: </span> Easily add, edit, and delete products through the admin interface.</li>
+                  <li><span className="font-bold">Shopping Cart: </span> Add or remove products in the cart with real-time updates on quantity and total price.</li>
+                  <li><span className="font-bold">Search: </span> Search products quickly for a more convenient shopping experience.</li>
+                  <li><span className="font-bold">Dynamic Data Fetching: </span> Load product data from a custom API built with Express.js, connected to a MySQL database.</li>
                 </ul>
               </div>
               <div>
                 <h2 className="text-lg font-semibold pb-1">Technologies Used</h2>
                 <ul className="list-disc pl-5 text-[#C7C7C7]">
-                  <li><span className="font-bold">Frontend: </span>Next.js, Tailwind CS</li>
-                  <li><span className="font-bold">API Integration: </span>Fetch product data via API</li>
-                  {/* <li><span className="font-bold">Database:</span> MySQL</li> */}
+                  <li><span className="font-bold">Frontend: </span>Vue.js, Tailwind CSS</li>
+                  <li><span className="font-bold">Backend:</span> Express</li>
+                  <li><span className="font-bold">Database:</span> MySQL</li>
                 </ul>
               </div>
               <div className="text-base font-bold flex gap-6">
                 <Link
-                  href="https://txna-shop.netlify.app/" target="_blank"
+                  href="https://vue-ecommerce-demo-one.vercel.app/" target="_blank"
                   className="border-b-[3px] text-[#38bdf8] hover:text-[var(--blue)] border-[#38bdf8] hover:border-[var(--blue)] flex items-center gap-2 w-fit tracking-[.1rem]"
                 >
                   LIVE DEMO
                   <GoArrowUpRight size={20} style={{ strokeWidth: 1.5 }} />
                 </Link>
                 <Link
-                  href="https://github.com/yuphawadee/e-commerce-api-nextjs" target="_blank"
+                  href="https://github.com/yuphawadee/vue-ecommerce" target="_blank"
                   className="border-b-[3px] text-[#38bdf8] hover:text-[var(--blue)] border-[#38bdf8] hover:border-[var(--blue)] flex items-center gap-2 w-fit tracking-[.1rem]"
                 >
                   SEE ON GITHUB

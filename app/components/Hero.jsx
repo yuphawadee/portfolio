@@ -51,7 +51,7 @@ function Hero() {
                     transition={{ duration: 1, delay: 1.5 }}
                 >
                     <a
-                        href="/resume-yuphawadee.pdf" target="_blank"
+                        href="/yuphawadee_resume.pdf" target="_blank"
                         className="border-custom w-[150px] h-[40px] text-base lg:text-lg flex justify-center"
                     >
                         Resume

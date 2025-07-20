@@ -110,6 +110,7 @@ function Skill() {
             <div className='flex items-center gap-8 pt-5'>
               <Image src='/next.js.svg' width={60} height={60} alt='Next.js' title='Next.js' />
               <Image src='/react.svg' width={60} height={60} alt='React' title='React' />
+               <Image src='/vue.svg' width={60} height={60} alt='Vue.js' title='Vue.js' />
               <Image src='/express.svg' width={60} height={60} alt='Express' title='Express' />
               <Image src='/node-js.svg' width={60} height={60} alt='Node.js' title='Node.js' />
               <Image src='/tailwindcss.svg' width={60} height={60} alt='Tailwind CSS' title='Tailwind CSS' />
